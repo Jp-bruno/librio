@@ -21,13 +21,6 @@ const LogoGridItemStyles = {
     justifyContent: 'center'
 }
 
-const GridBreakpoints = {
-    xs: 10,
-    sm: 10,
-    md: 10,
-    lg: 'auto'
-}
-
 export default function TopBar() {
     const router = useRouter();
 
@@ -36,11 +29,11 @@ export default function TopBar() {
             <Container disableGutters>
                 <Toolbar disableGutters>
                     <Grid container sx={GridStyles} columns={10}>
-                        <Grid item {...GridBreakpoints} sx={LogoGridItemStyles}>
+                        <Grid item xs={10} sm={10} md={10} lg='auto' sx={LogoGridItemStyles}>
                             <Image src='/cclogo_svg_main_with_dog.svg' alt='logo' width='262' height='115' />
                         </Grid>
 
-                        <Grid item {...GridBreakpoints}>
+                        <Grid item xs={10} sm={10} md={10} lg='auto'>
                             <MenuBasic />
                         </Grid>
                     </Grid>

@@ -95,7 +95,7 @@ export default function CardMissao({ titulo, texto, cor }: CardMissaoType) {
                             <Box component='ul' sx={UlStyles}>
                                 {
                                     texto.map(el => {
-                                        return <li key={Math.random() * 2000}>{el}ok</li>
+                                        return <li key={Math.random() * 2000}>{el}</li>
                                     })
                                 }
                             </Box>

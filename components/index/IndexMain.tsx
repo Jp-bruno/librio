@@ -1,8 +1,5 @@
-import { Box, Grid, Typography } from '@mui/material';
-import { theme } from '../../styles/theme';
+import { Box, Typography } from '@mui/material';
 import SocialMediaLinks from './SocialMediaLinks';
-import IndexLoginButton from './IndexLoginButton';
-import { useEffect, useRef, useState } from 'react';
 
 const BoxMainStyles = {
     backgroundImage: 'url("/pexels-helena-lopes-2253275.jpg")',
@@ -44,7 +41,6 @@ const TypographyBoxStyles = {
 }
 
 export default function IndexMain() {
-
     return (
         <Box component='main' sx={BoxMainStyles}>
             <Box sx={TypographyBoxStyles}>

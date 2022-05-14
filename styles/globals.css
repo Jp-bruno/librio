@@ -6,6 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -20,6 +21,3 @@ a {
   symbols: 🦴 🦴 🦴 🦴;
   suffix: " ";
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;600;700&family=Inria+Serif:wght@300;400;700&display=swap');
-

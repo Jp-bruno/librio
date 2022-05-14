@@ -33,7 +33,7 @@ const TypographyHeaderStyles = {
     color: 'white',
     textTransform: 'lowercase',
     borderRadius: '8px',
-    fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat !important',
     textAlign: 'center',
     // textDecoration: 'underline',
     // lineHeight: '110%',
@@ -53,7 +53,7 @@ const UlStyles = {
         '&:not(li:first-of-type)': {
             marginTop: '20px'
         },
-        color: 'white'
+        color: '#ffffffc9'
     }
 }
 
@@ -70,7 +70,7 @@ const ButtonStyles = {
     marginTop: '20px',
     padding: '10px 0',
     transition: 'padding 0.3s ease, background-color 0.3s ease',
-    fontWeight: '200',
+    fontWeight: '500',
     color: 'white',
     letterSpacing: '2px',
     backgroundColor: 'brown',

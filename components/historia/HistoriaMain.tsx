@@ -55,7 +55,6 @@ const TextGridStyles = {
     lineHeight: '150%'
 }
 
-
 export default function HistoriaMain() {
     return (
         <Box component='main' sx={MainBoxStyles}>
@@ -108,7 +107,6 @@ export default function HistoriaMain() {
                     </Grid>
                 </Grid>
             </Container>
-
         </Box>
     )
 }

@@ -100,10 +100,8 @@ export default function CardMissao({ titulo, texto, cor }: CardMissaoType) {
                                 }
                             </Box>
                     }
-
                 </Grid>
             </Grid>
-
         </Box>
     )
 }

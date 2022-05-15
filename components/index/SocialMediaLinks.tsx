@@ -5,7 +5,19 @@ const GridStyles = {
     width: 'max-content',
     justifyContent: 'space-between',
     columnGap: '10px',
-    marginTop: '20px'
+    marginTop: '20px',
+    marginInline: {
+        xs: 'auto',
+        sm: 'auto',
+        md: 'auto',
+        lg: '0'
+    },
+    marginBottom: {
+        xs: '50px',
+        sm: '50px',
+        md: '0',
+        lg: '0'
+    }
 }
 
 const IconStyles = {

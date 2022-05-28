@@ -6,9 +6,9 @@ import Image from 'next/image';
 import { theme } from '../../styles/theme';
 
 const BoxMainStyles = {
-    backgroundImage: 'url("/pexels-helena-lopes-2253275.jpg")',
+    backgroundImage: 'url("/caes-na-calcada.jpg")',
     backgroundSize: 'cover',
-    backgroundPosition: 'center top 60%',
+    backgroundPosition: 'center top 80%',
     paddingBottom: '100px',
     paddingInline: {
         xs: '0px',
@@ -47,14 +47,13 @@ const TypographyBoxStyles = {
     backgroundImage: {
         xs: 'none',
         sm: 'none',
-        md: 'linear-gradient(101.97deg, #4C5288 0%, rgba(76, 82, 136, 0) 90.05%)',
-        lg: 'linear-gradient(101.97deg, #4C5288 0%, rgba(76, 82, 136, 0) 90.05%)',
+
     },
     backgroundColor: {
         xs: 'rgba(255,255,255,0.7)',
         sm: 'rgba(255,255,255,0.7)',
-        md: 'rgba(0,0,0,0)',
-        lg: 'rgba(0,0,0,0)',
+        md: `${theme.palette.primary.main}`,
+        lg: `${theme.palette.primary.main}`,
     },
     backdropFilter: 'blur(6px)',
     borderRadius: {
@@ -95,9 +94,9 @@ export default function IndexMain() {
                             <Typography variant='h2' fontFamily='Josefin Slab' fontWeight={200} component='h1'>
                                 Cão Carioca
                             </Typography>
+                            <SocialMediaLinks />
                         </Box>
 
-                        <SocialMediaLinks />
                     </Grid>
                     <Grid item xs={12} sm={12} md={6} lg={6} display='flex' alignItems='center' justifyContent='center'>
                         <IndexLoginButton />

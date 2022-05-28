@@ -8,6 +8,10 @@ import { useState } from 'react';
 import { theme } from '../styles/theme';
 
 const AppBarStyles = {
+    backgroundImage: {
+        xs: 'none',
+        lg: 'url("/ipanema-sidewalk.jpg")',
+    },
     paddingTop: '15px',
     paddingBottom: {
         xs: '0',
@@ -18,7 +22,6 @@ const AppBarStyles = {
     position: 'relative',
     backgroundColor: {
         xs: 'white',
-        lg: `${theme.palette.primary.main}`
     }
 }
 
@@ -30,9 +33,9 @@ const GridStyles = {
 const LogoGridItemStyles = {
     display: 'flex',
     justifyContent: 'center',
-    backdropFilter: {
+    backgroundColor: {
         xs: 'none',
-        lg: 'brightness(60%)'
+        lg: `${theme.palette.secondary.light}`
     },
     marginBottom: {
         xs: '15px',

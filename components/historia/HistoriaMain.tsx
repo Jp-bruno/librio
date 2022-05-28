@@ -9,17 +9,18 @@ const MainBoxStyles = {
     backgroundPosition: 'center bottom 100%',
     backgroundAttachment: 'fixed',
     paddingTop: {
-        xs: '300px',
-        lg: '165px'
+        lg: '35px'
     },
     paddingBottom: '155px',
-    paddingInline: '50px',
+    paddingInline: {
+        xs: '0px',
+        lg: '50px'
+    },
     width: '100%',
     height: 'fit-content'
 }
 
 const Container_1_Styles = {
-    marginTop: '50px',
     borderRadius: '3px',
     backgroundColor: '#ffffffcf',
     paddingTop: '20px',

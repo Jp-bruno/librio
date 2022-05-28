@@ -22,7 +22,7 @@ const ButtonsBoxStyles = {
         md: '8px',
         lg: '8px'
     },
-    backgroundColor: 'rgba(255,255,255,0.5)',
+    backgroundColor: 'rgba(255,255,255,0.3)',
     width: {
         xs: '100%',
         sm: '100%',

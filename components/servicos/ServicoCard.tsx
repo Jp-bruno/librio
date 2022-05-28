@@ -10,6 +10,7 @@ type ServicoCardProps = {
 const ServicoMainBoxStyles = {
     padding: '10px 20px 20px',
     borderRadius: '10px',
+    marginInline: 'auto',
     backgroundColor: `${theme.palette.primary.main}`,
     width: {
         xs: '100%',
@@ -24,16 +25,15 @@ const ServicoMainBoxStyles = {
 
 const TypographyHeaderStyles = {
     fontSize: {
-        xs: '1.4rem',
-        sm: '1.4rem',
-        md: '1.6rem',
-        lg: '2rem'
+        xs: '1.9rem',
+        lg: '2.3rem'
     },
     padding: '30px 30px 10px',
     color: 'white',
     textTransform: 'lowercase',
     borderRadius: '8px',
-    fontFamily: 'Montserrat !important',
+    fontFamily: 'Josefin Slab',
+    fontWeight: '500',
     textAlign: 'center',
     // textDecoration: 'underline',
     // lineHeight: '110%',
@@ -45,7 +45,7 @@ const TypographyHeaderStyles = {
 
 const UlStyles = {
     listStyleType: 'none',
-    fontSize: '1.2rem',
+    fontSize: '1rem',
     textAlign: 'center',
     padding: '0',
 
@@ -58,12 +58,12 @@ const UlStyles = {
 }
 
 const TypographyPStyles = {
-    paddingInline: '20px',
     textAlign: 'center',
     marginBottom: '20px',
     marginTop: '20px',
     fontFamily: 'Montserrat',
-    letterSpacing: '2px'
+    letterSpacing: '2px',
+    width: 'fit-content'
 }
 
 const ButtonStyles = {
@@ -73,11 +73,10 @@ const ButtonStyles = {
     fontWeight: '500',
     color: 'white',
     letterSpacing: '2px',
-    backgroundColor: 'brown',
+    backgroundColor: `${theme.palette.secondary.dark}`,
 
     '&:hover': {
-        backgroundColor: '#ffffff',
-        color: 'brown'
+        backgroundColor: `${theme.palette.secondary.main}`,
     }
 }
 

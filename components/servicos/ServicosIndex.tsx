@@ -3,25 +3,23 @@ import ServicoCard from "./ServicoCard";
 import { CardsData } from '../../cardsData/CardsData';
 
 const BoxMainStyles = {
-    backgroundImage: 'url("pexels-alice-castro-1870301.jpg")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center top 60%',
+    // backgroundSize: 'cover',
+    // backgroundPosition: 'center top 60%',
     backgroundAttachment: 'fixed',
     paddingTop: {
-        xs: '320px',
-        lg: '165px'
+        lg: '65px'
     },
     paddingBottom: '155px',
-    paddingInline: '50px',
     width: '100%',
-    height: 'fit-content'
+    height: 'fit-content',
+    paddingInline: {
+        xs: '10px'
+    }
 }
 
 const GridContainerStyles = {
-    justifyContent: 'center',
-    justifyItems: 'space-between',
+    alignItems: 'center',
     padding: '20px 0',
-    alignItems: 'center'
 }
 
 const GridItemsColumns = {
@@ -33,7 +31,7 @@ const GridItemsColumns = {
 export default function ServicosIndex() {
     return (
         <Box component='main' sx={BoxMainStyles}>
-            <Grid container columns={12} rowGap={5} sx={GridContainerStyles}>
+            <Grid container columns={12} rowGap={2} sx={GridContainerStyles}>
                 {
                     CardsData.map(({ titulo, lista, texto }) => {
                         return (

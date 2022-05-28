@@ -8,7 +8,7 @@ const BoxMainStyles = {
     backgroundPosition: 'center top 60%',
     backgroundAttachment: 'fixed',
     paddingTop: {
-        xs: '300px',
+        xs: '320px',
         lg: '165px'
     },
     paddingBottom: '155px',

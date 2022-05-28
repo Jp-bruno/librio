@@ -9,7 +9,7 @@ const MainBoxStyles = {
     backgroundPosition: 'center bottom 100%',
     backgroundAttachment: 'fixed',
     paddingTop: {
-        xs: '260px',
+        xs: '300px',
         lg: '165px'
     },
     paddingBottom: '155px',

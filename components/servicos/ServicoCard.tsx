@@ -29,7 +29,7 @@ const TypographyHeaderStyles = {
         md: '1.6rem',
         lg: '2rem'
     },
-    padding: '10px 30px',
+    padding: '30px 30px 10px',
     color: 'white',
     textTransform: 'lowercase',
     borderRadius: '8px',

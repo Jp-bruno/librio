@@ -4,7 +4,12 @@ import Image from 'next/image';
 
 
 const ButtonStyles = {
-
+    borderRadius: {
+        xs: '0',
+        sm: '0',
+        md: '8px',
+        lg: '8px'
+    },
     textTransform: 'none',
     fontFamily: 'monospace',
 

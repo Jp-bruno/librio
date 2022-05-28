@@ -3,7 +3,6 @@ import SocialMediaLinks from './SocialMediaLinks';
 import IndexLoginButton from './IndexLoginButton';
 import useScreenSize from '../../hooks/useScreenSize';
 import Image from 'next/image';
-import { theme } from '../../styles/theme';
 
 const BoxMainStyles = {
     backgroundImage: 'url("/caes-na-calcada.jpg")',
@@ -50,12 +49,9 @@ const TypographyBoxStyles = {
 
     },
     backgroundColor: {
-        xs: 'rgba(255,255,255,0.7)',
-        sm: 'rgba(255,255,255,0.7)',
-        md: `${theme.palette.primary.main}`,
-        lg: `${theme.palette.primary.main}`,
+
     },
-    backdropFilter: 'blur(6px)',
+    backdropFilter: 'blur(10px) contrast(50%)',
     borderRadius: {
         xs: '0',
         sm: '0',

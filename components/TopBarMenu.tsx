@@ -1,7 +1,6 @@
 import { Box, Button } from '@mui/material';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { type } from 'os';
 import useScreenSize from '../hooks/useScreenSize';
 
 const ButtonsBoxStyles = {
@@ -47,7 +46,6 @@ const ButtonsBoxStyles = {
 }
 
 const ButtonsStyles = {
-    fontFamily: 'Inconsolata, monospace',
     textTransform: 'none',
     borderRadius: {
         xs: '0',
@@ -65,14 +63,7 @@ const ButtonsStyles = {
 }
 
 const HomeButtonStyles = {
-    borderRadius: {
-        xs: '0',
-        sm: '0',
-        md: '8px',
-        lg: '8px'
-    },
-    textTransform: 'none',
-    fontFamily: 'monospace',
+    ...ButtonsStyles,
 
     '&.MuiButton-contained': {
         backgroundColor: 'brown',

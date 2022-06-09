@@ -5,44 +5,28 @@ import CloseIcon from '@mui/icons-material/Close';
 import MenuBasic from './TopBarMenu';
 import useScreenSize from '../hooks/useScreenSize';
 import { useState } from 'react';
-import { theme } from '../styles/theme';
 
 const AppBarStyles = {
-    backgroundImage: {
-        xs: 'none',
-        lg: 'url("/ipanema-sidewalk.jpg")',
-    },
-    paddingTop: '15px',
-    paddingBottom: {
-        xs: '0',
-        sm: '0',
-        md: '15px',
-        lg: '15px'
-    },
+    paddingTop: '10px',
+    paddingBottom: '10px',
     position: 'relative',
     backgroundColor: {
-        xs: 'white',
+        xs: '#F7F7F7',
     }
-}
-
-const GridStyles = {
-    justifyContent: 'space-between',
-    alignItems: 'center',
 }
 
 const LogoGridItemStyles = {
     display: 'flex',
-    justifyContent: 'center',
-    backgroundColor: {
-        xs: 'none',
-        lg: `${theme.palette.secondary.light}`
+    justifyContent: {
+        xs: 'center',
+        md: 'start',
+        lg: 'start'
     },
     marginBottom: {
         xs: '15px',
-
+        md: '0px',
+        lg: '0px',
     },
-    paddingInline: '25px',
-    borderRadius: '50%'
 }
 
 const MenuButtonStyles = {
@@ -63,13 +47,13 @@ export default function TopBar() {
             <AppBar sx={AppBarStyles}>
                 <Container disableGutters>
                     <Toolbar disableGutters>
-                        <Grid container sx={GridStyles} columns={10}>
-                            <Grid item xs={10} sm={10} md={10} lg='auto' sx={LogoGridItemStyles}>
-                                <Image src='/cclogo_svg_main_with_dog.svg' alt='logo' width='262' height='115' />
+                        <Grid container columns={10}>
+                            <Grid item xs={10} sm={10} md={2} lg={2} sx={LogoGridItemStyles}>
+                                <Image src='/logo_cc.png' alt='logo' width='100' height='100' />
                             </Grid>
-                        </Grid>
-                        <Grid item>
-                            <MenuBasic isOpen={true} />
+                            <Grid item xs={10} sm={10} md={8} lg={8}>
+                                <MenuBasic isOpen={true} />
+                            </Grid>
                         </Grid>
                     </Toolbar>
                 </Container>
@@ -81,13 +65,13 @@ export default function TopBar() {
         <AppBar sx={AppBarStyles}>
             <Container disableGutters>
                 <Toolbar disableGutters>
-                    <Grid container sx={GridStyles} columns={10}>
+                    <Grid container columns={10}>
                         <Grid item xs={10} sm={10} md={10} lg='auto' sx={LogoGridItemStyles}>
                             <Image src='/cclogo_svg_main_with_dog.svg' alt='logo' width='131' height='57.5' />
                         </Grid>
 
                         <Grid item xs={10} sm={10} md={10} lg='auto'>
-                            <MenuBasic isOpen={menuIsOpen} toggleMenu={toggleMenu}/>
+                            <MenuBasic isOpen={menuIsOpen} toggleMenu={toggleMenu} />
                         </Grid>
                     </Grid>
                 </Toolbar>

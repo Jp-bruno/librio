@@ -1,19 +1,27 @@
-import { Box, Button } from '@mui/material';
+import { Box, Button, ButtonGroup } from '@mui/material';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import useScreenSize from '../hooks/useScreenSize';
 
+
+
+
+// export default function TopBarMenu() {
+//     return(
+
+//     )
+// }
+
 const ButtonsBoxStyles = {
     display: 'flex',
-    justifyContent: 'space-between',
-    columnGap: '20px',
     transition: 'transform 0.2s ease, height 0.2s ease',
     transformOrigin: 'top',
+    height: '100%',
     padding: {
         xs: '0',
         sm: '0',
-        md: '20px',
-        lg: '20px'
+        md: '20px 0',
+        lg: '20px 0'
     },
     borderRadius: {
         xs: '0',
@@ -21,14 +29,8 @@ const ButtonsBoxStyles = {
         md: '8px',
         lg: '8px'
     },
-    backgroundColor: 'rgba(255,255,255,0.3)',
-    width: {
-        xs: '100%',
-        sm: '100%',
-        md: '80%',
-        lg: 'max-content'
-    },
-    marginInline: 'auto',
+    // backgroundColor: 'rgba(255,255,255,0.3)',
+    width: '100%',
     flexDirection: {
         xs: 'column',
         sm: 'column',
@@ -50,9 +52,11 @@ const ButtonsStyles = {
     borderRadius: {
         xs: '0',
         sm: '0',
-        md: '8px',
-        lg: '8px'
+        md: '5px',
+        lg: '5px'
     },
+    width: '100%',
+    fontSize: '18px',
 
     '&.MuiButton-contained': {
         '&:hover': {
@@ -79,31 +83,31 @@ type MenuType = {
     toggleMenu?: any
 }
 
-export default function MenuBasic({isOpen, toggleMenu}:MenuType) {
+export default function MenuBasic({ isOpen, toggleMenu }: MenuType) {
     const router = useRouter();
     const windowSize = useScreenSize();
 
     if (windowSize > 900) {
         return (
-            <Box sx={ButtonsBoxStyles}>
+            <ButtonGroup sx={ButtonsBoxStyles}>
                 <Link href='/'>
-                    <Button variant='contained' sx={HomeButtonStyles} endIcon={'🐕‍🦺'}>
+                    <Button variant='text' sx={ButtonsStyles} /*endIcon={'🐕‍🦺'}*/>
                         Início
                     </Button>
                 </Link>
-    
+
                 <Link href='/servicos'>
-                    <Button variant='contained' sx={ButtonsStyles} endIcon={'🐾'}>
+                    <Button variant='text' sx={ButtonsStyles} /*endIcon={'🐾'}*/>
                         Nossos serviços
                     </Button>
                 </Link>
-    
+
                 <Link href='/historia'>
-                    <Button variant='contained' sx={ButtonsStyles} color={'secondary'} endIcon={'🐶'}>
+                    <Button variant='text' sx={ButtonsStyles} /*endIcon={'🐶'}*/>
                         Nossa história
                     </Button>
                 </Link>
-            </Box>
+            </ButtonGroup>
         )
     }
 
@@ -114,7 +118,6 @@ export default function MenuBasic({isOpen, toggleMenu}:MenuType) {
                     Início
                 </Button>
             </Link>
-
 
             <Link href='/servicos'>
                 <Button variant='contained' sx={ButtonsStyles} endIcon={'🐾'} onClick={toggleMenu}>

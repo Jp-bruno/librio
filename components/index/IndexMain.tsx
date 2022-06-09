@@ -3,11 +3,13 @@ import SocialMediaLinks from './SocialMediaLinks';
 import IndexLoginButton from './IndexLoginButton';
 import useScreenSize from '../../hooks/useScreenSize';
 import Image from 'next/image';
+import { theme } from '../../styles/theme';
 
 const BoxMainStyles = {
-    backgroundImage: 'url("/caes-na-calcada.jpg")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center top 80%',
+    backgroundImage: 'url("/ipanema2.png")',
+    // backgroundImage: 'url("/ipanema-sidewalk.jpg")',
+    // backgroundImage: 'url("/caes-na-calcada.jpg")',
+    backgroundColor: '#F7F7F7',
     paddingBottom: '100px',
     paddingInline: {
         xs: '0px',
@@ -38,27 +40,9 @@ const TypographyBoxStyles = {
     },
     width: {
         xs: '100%',
-        sm: '100%',
-        md: 'fit-content',
-        lg: 'fit-content',
     },
     padding: '50px 20px 60px',
-    backgroundImage: {
-        xs: 'none',
-        sm: 'none',
-
-    },
-    backgroundColor: {
-
-    },
-    backdropFilter: 'blur(10px) contrast(50%)',
-    borderRadius: {
-        xs: '0',
-        sm: '0',
-        md: '10px',
-        lg: '10px'
-    },
-    marginTop: '30px',
+    backgroundColor: `${theme.palette.secondary.main}`,
     textAlign: {
         xs: 'center',
         sm: 'center',
@@ -72,7 +56,16 @@ const TypographyBoxStyles = {
         md: 'left',
         lg: 'left',
     },
-    height: 'fit-content',
+    height: {
+        xs: 'fit-content',
+        lg: '304px'
+    },
+}
+
+const SecondBoxStyles = {
+    height: '304px',
+    backgroundColor: `${theme.palette.primary.main}`,
+    width: '100%'
 }
 
 export default function IndexMain() {
@@ -85,7 +78,7 @@ export default function IndexMain() {
                     <Grid item xs={12} sm={12} md={6} lg={6}>
                         <Box sx={TypographyBoxStyles}>
                             <Typography variant='h3' mb={1} fontFamily='Josefin Slab' fontWeight={200} component='p'>
-                                Bem-vindo a oo
+                                Bem-vindo a
                             </Typography>
                             <Typography variant='h2' fontFamily='Josefin Slab' fontWeight={200} component='h1'>
                                 Cão Carioca
@@ -94,8 +87,11 @@ export default function IndexMain() {
                         </Box>
 
                     </Grid>
-                    <Grid item xs={12} sm={12} md={6} lg={6} display='flex' alignItems='center' justifyContent='center'>
-                        <IndexLoginButton />
+                    <Grid item xs={12} sm={12} md={6} lg={6} /*display='flex' alignItems='center' justifyContent='center'*/>
+                        {/* <IndexLoginButton /> */}
+                        <Box sx={SecondBoxStyles}>
+                            {/*Fazer um carrossel aqui*/}
+                        </Box>
                     </Grid>
                 </Grid>
             </Box>

@@ -85,7 +85,7 @@ export default function IndexMain() {
                     <Grid item xs={12} sm={12} md={6} lg={6}>
                         <Box sx={TypographyBoxStyles}>
                             <Typography variant='h3' mb={1} fontFamily='Josefin Slab' fontWeight={200} component='p'>
-                                Bem-vindo a
+                                Bem-vindo a oo
                             </Typography>
                             <Typography variant='h2' fontFamily='Josefin Slab' fontWeight={200} component='h1'>
                                 Cão Carioca

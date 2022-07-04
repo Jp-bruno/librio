@@ -3,9 +3,7 @@ import ServicoCard from "./ServicoCard";
 import { CardsData } from '../../cardsData/CardsData';
 
 const BoxMainStyles = {
-    backgroundImage: 'url("pexels-helena-lopes-2253275.jpg")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center top 60%',
+    backgroundImage: 'url("/ipanema2.png")',
     backgroundAttachment: 'fixed',
     paddingTop: {
         lg: '65px'

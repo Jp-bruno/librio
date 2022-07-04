@@ -4,8 +4,8 @@ import { Box, Grid } from '@mui/material';
 const GridStyles = {
     width: {
         xs: '70%',
-        md: 'fit-content',
-        lg: 'fit-content'
+        md: '50%',
+        lg: '50%'
     },
     justifyContent: 'space-between',
     marginTop: '30px',
@@ -21,19 +21,21 @@ const GridStyles = {
         md: 'auto',
         lg: '0'
     },
-    marginBottom: '0'
+    marginBottom: '0',
 }
 
 const GridItemStyles = {
-    width: 'auto'
+    width: 'fit-content',
+    display: 'flex',
+    justifyContent: 'center'
 }
 
 const IconStyles = {
     color: {
         xs: 'rgba(0,0,0,0.7)',
         sm: 'rgba(0,0,0,0.7)',
-        md: 'white',
-        lg: 'white',
+        md: '#3D3D3D',
+        lg: '#3D3D3D',
     },
     cursor: 'pointer',
     width: {
@@ -41,12 +43,13 @@ const IconStyles = {
         md: 'fit-content',
         lg: 'fit-content'
     },
+
 }
 
 export default function SocialMediaLinks() {
     return (
         <>
-            <Grid container columns={6} sx={GridStyles}  >
+            <Grid container columns={6} sx={GridStyles} >
                 <Grid xs={1} item sx={GridItemStyles} key={Math.random() * 1000}>
                     <Facebook sx={IconStyles} />
                 </Grid>

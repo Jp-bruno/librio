@@ -4,9 +4,7 @@ import { Pets } from '@mui/icons-material';
 import CardMissao from "./CardMissao";
 
 const MainBoxStyles = {
-    backgroundImage: 'url("/pexels-sebastian-coman-travel-3631659.jpg")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center bottom 100%',
+    backgroundImage: 'url("/ipanema2.png")',
     backgroundAttachment: 'fixed',
     paddingTop: {
         lg: '35px'
